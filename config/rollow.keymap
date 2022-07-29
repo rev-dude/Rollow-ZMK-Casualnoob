@@ -113,7 +113,7 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &none &kp        Q &kp        W &kp        F &kp        P &kp        B                 &kp        J &kp        L &kp        U &kp        Y &kp    UNDER &none
+      &none &kp        ESC &kp        W &kp        F &kp        P &kp        B                 &kp        J &kp        L &kp        U &kp        Y &kp    UNDER &none
       &none &kp        A &kp        R &kp        S &kp        T &kp        G                 &kp        M &kp        N &kp        E &kp        I &kp        O &none
       &none &kp        Z &kp        X &kp        C &kp        D &kp        V                 &kp        K &kp        H &kp    COMMA &kp   PERIOD &kp     APOS &none
                                 &none        &mo      NAV &kp    SPACE                 &td0         &mo  SYMBOLS &mo      NAV
