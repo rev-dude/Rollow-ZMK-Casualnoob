@@ -14,14 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: skeletyl_v2_left
-  - board: nice_nano_v2
-    shield: skeletyl_v2_right
-  - board: nice_nano_v2
-    shield: charybdis_4x6_v2_left
-  - board: nice_nano_v2
-    shield: charybdis_4x6_v2_right
-  - board: nice_nano_v2
     shield: rollow_left
   - board: nice_nano_v2
     shield: rollow_right
