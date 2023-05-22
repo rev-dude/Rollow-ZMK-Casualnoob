@@ -42,10 +42,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC     &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp UNDER
-      &kp R       &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &kp I       &kp O
-      &kp Z       &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &kp PERIOD  &kp APOS
-                              &none       &kp SPACE   &kp SPACE               &kp SPACE   &kp SPACE   &kp SPACE
+      &kp ESC     &kp C       &kp H       &kp P       &kp V                   &kp K       &kp Y        &kp O       &kp J       &kp Q
+      &kp R       &kp S       &kp N       &kp T       &kp G                   &kp W       &kp U        &kp E       &kp I       &kp A
+      &kp X       &kp M       &kp L       &kp D       &kp B                   &kp Z       &kp F        &kp COMMA   &kp PERIOD  &kp APOS
+                              &none       &kp BSPC    &kp SPACE               &kp SPACE   &kp LC(BSPC) &none
 
                         >;
 
