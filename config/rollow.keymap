@@ -14,7 +14,7 @@
 
   chosen {
     zmk,battery = &vbatt;
-    //zmk,matrix_transform = &five_column_transform;
+    zmk,matrix_transform = &five_column_transform;
   };
 
   vbatt: vbatt {
@@ -27,25 +27,25 @@
 
                 default_layer {
 /* Default
- * .-----------------------------------------.                    .-----------------------------------------.
- * | TAB  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  | BKSP |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | CTRL |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |   '  |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | SHFT |   Z  |   X  |   C  |   V  |   B  |.-------.   .------.|   N  |   M  |   ,  |   .  |   /  | SHFT |
- * '-----------------------------------------/       /     \      \-----------------------------------------'
- *                          |  GUI |  LWR | / Space /       \ Space\  |TT(RS)| Tab  |
- *                          |      |      |/       /         \      \ |      |      |
- *                          '-------------''------'           '------''-------------'
+ * .----------------------------------.                     .----------------------------------.
+ * |   Q  |   W  |   E  |   R  |   T  |                     |   Y  |   U  |   I  |   O  |   P  |
+ * |------+------+------+------+------|                     |------+------+------+------+------|
+ * |   A  |   S  |   D  |   F  |   G  |                     |   H  |   J  |   K  |   L  |   ;  |
+ * |------+------+------+------+------|                     |------+------+------+------+------|
+ * |   Z  |   X  |   C  |   V  |   B  |.-------.   .-------.|   N  |   M  |   ,  |   .  |   /  |
+ * '----------------------------------/       /     \       \----------------------------------'
+ *                   |  GUI |  LWR | / Space /       \ Space \  |TT(RS)| Tab  |
+ *                   |      |      |/       /         \       \ |      |      |
+ *                   '-------------''------'           '-------''-------------'
  *
  *   Encoder Left: Up <-> Down
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &none     &kp ESC     &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp UNDER   &none
-      &none     &kp R       &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &kp I       &kp O       &none
-      &none     &kp Z       &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &kp PERIOD  &kp APOS    &none
-                                        &none       &kp SPACE   &kp SPACE               &kp SPACE   &kp SPACE   &kp SPACE
+      &kp ESC     &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp UNDER
+      &kp R       &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &kp I       &kp O
+      &kp Z       &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &kp PERIOD  &kp APOS
+                              &none       &kp SPACE   &kp SPACE               &kp SPACE   &kp SPACE   &kp SPACE
 
                         >;
 
