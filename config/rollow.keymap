@@ -10,6 +10,10 @@
 
 #define BASE 0
 
+&mt {
+    tapping-term-ms = <190>;
+};
+
 / {
 
   chosen {
@@ -42,10 +46,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC     &kp C       &kp H       &kp P       &kp V                   &kp K       &kp Y        &kp O       &kp J       &kp Q
-      &kp R       &kp S       &kp N       &kp T       &kp G                   &kp W       &kp U        &kp E       &kp I       &kp A
-      &kp X       &kp M       &kp L       &kp D       &kp B                   &kp Z       &kp F        &kp COMMA   &kp PERIOD  &kp APOS
-                              &none       &kp BSPC    &kp SPACE               &kp SPACE   &kp LC(BSPC) &none
+      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O           &kp J           &kp Q
+      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E     &mt RALT I      &mt RGUI A
+      &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &kp F           &kp COMMA       &kp PERIOD      &kp APOS
+                                        &none           &kp BSPC        &kp SPACE               &kp SPACE       &kp LC(BSPC)    &none
 
                         >;
 
