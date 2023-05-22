@@ -85,7 +85,7 @@
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | CTRL |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |   '  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | SHFT |   Z  |   X  |   C  |   V  |   B  |-------.    .-------|   N  |   M  |   ,  |   .  |   /  | SHFT |
+ * | SHFT |   Z  |   X  |   C  |   V  |   B  |.-------.   .------.|   N  |   M  |   ,  |   .  |   /  | SHFT |
  * '-----------------------------------------/       /     \      \-----------------------------------------'
  *                          |  GUI |  LWR | / Space /       \ Space\  |TT(RS)| Tab  |
  *                          |      |      |/       /         \      \ |      |      |
@@ -95,10 +95,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &none &kp        ESC &kp        W &kp        F &kp        P &kp        B                 &kp        J &kp        L &kp        U &kp        Y &kp    UNDER &none
-      &none &kp        R &kp        R &kp        S &kp        T &kp        G                 &kp        M &kp        N &kp        E &kp        I &kp        O &none
-      &none &kp        Z &kp        X &kp        C &kp        D &kp        V                 &kp        K &kp        H &kp    COMMA &kp   PERIOD &kp     APOS &none
-                                &none        &kp      SPACE &kp    SPACE                 &kp        SPACE &kp SPACE &kp SPACE
+      &none     &kp ESC     &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp UNDER   &none
+      &none     &kp R       &kp R       &kp S       &kp T       &kp G                   &kp M       &kp N       &kp E       &kp I       &kp O       &none
+      &none     &kp Z       &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp COMMA   &kp PERIOD  &kp APOS    &none
+                                        &none       &kp SPACE   &kp SPACE               &kp SPACE   &kp SPACE   &kp SPACE
 
                         >;
 
