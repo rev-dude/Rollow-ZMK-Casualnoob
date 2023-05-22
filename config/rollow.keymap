@@ -10,25 +10,6 @@
 
 #define BASE 0
 
-#define LAUNCHER (LG(TAB))
-#define CTRL_TAB (LC(TAB))
-#define C_S_TAB (LC(LS(TAB)))
-
-#define SPC_PREVIOUS (LC(LG(LEFT)))
-#define S_PRV SPC_PREVIOUS
-
-#define SPC_NEXT (LC(LG(RIGHT)))
-#define S_NXT SPC_NEXT
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-};
-
-&sk {
-  release-after-ms = <2000>;
-  quick-release;
-};
-
 / {
 
   chosen {
@@ -40,40 +21,6 @@
       compatible = "zmk,battery-nrf-vddh";
       label = "VBATT";
   };
-
-  behaviors {
-      td0: tap_dance_smart_shift {
-          compatible = "zmk,behavior-tap-dance";
-          label = "TAP_DANCE_SMART_SHIFT";
-          #binding-cells = <0>;
-          tapping-term-ms = <175>;
-          bindings = <&sk LSHIFT>, <&caps_word>;
-      };
-      gqt: global-quick-tap {
-          compatible = "zmk,behavior-hold-tap";
-          label = "GLOBAL_QUICK_TAP";
-          #binding-cells = <2>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <175>;
-          quick-tap-ms = <125>;
-          global-quick-tap;
-          bindings = <&mo>, <&kp>;
-      };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <40>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        combo_sft {
-            timeout-ms = <40>;
-            key-positions = <37 38>;
-            bindings = <&sk LSHIFT>;
-        };
-    };
 
         keymap {
                 compatible = "zmk,keymap";
