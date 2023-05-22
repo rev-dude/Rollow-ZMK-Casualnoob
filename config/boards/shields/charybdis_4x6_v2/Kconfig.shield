@@ -1,8 +1,0 @@
-# Copyright (c) 2020 ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_CHARYBDIS_LEFT
-	def_bool $(shields_list_contains,charybdis_4x6_v2_left)
-
-config SHIELD_CHARYBDIS_RIGHT
-	def_bool $(shields_list_contains,charybdis_4x6_v2_right)
