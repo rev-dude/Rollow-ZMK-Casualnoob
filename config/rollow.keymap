@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
+#define GUEST 1
 
 &mt {
     tapping-term-ms = <190>;
@@ -31,16 +32,16 @@
 
                 default_layer {
 /* Default
- * .----------------------------------.                     .----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |                     |   Y  |   U  |   I  |   O  |   P  |
- * |------+------+------+------+------|                     |------+------+------+------+------|
- * |   A  |   S  |   D  |   F  |   G  |                     |   H  |   J  |   K  |   L  |   ;  |
- * |------+------+------+------+------|                     |------+------+------+------+------|
- * |   Z  |   X  |   C  |   V  |   B  |.-------.   .-------.|   N  |   M  |   ,  |   .  |   /  |
- * '----------------------------------/       /     \       \----------------------------------'
- *                   |  GUI |  LWR | / Space /       \ Space \  |TT(RS)| Tab  |
- *                   |      |      |/       /         \       \ |      |      |
- *                   '-------------''------'           '-------''-------------'
+ * .----------------------------------.                       .----------------------------------.
+ * |   Q  |   W  |   E  |   R  |   T  |                       |   Y  |   U  |   I  |   O  |   P  |
+ * |------+------+------+------+------|                       |------+------+------+------+------|
+ * |   A  |   S  |   D  |   F  |   G  |                       |   H  |   J  |   K  |   L  |   ;  |
+ * |------+------+------+------+------|                       |------+------+------+------+------|
+ * |   Z  |   X  |   C  |   V  |   B  | .-------.   .-------. |   N  |   M  |   ,  |   .  |   /  |
+ * '----------------------------------'/       /     \       \'----------------------------------'
+ *                   |  GUI |  LWR |  / Space /       \ Space \  |TT(RS)| Tab  |
+ *                   |      |      | /       /         \       \ |      |      |
+ *                   '-------------''-------'           '-------''-------------'
  *
  *   Encoder Left: Up <-> Down
  *   Encoder Right: Left <-> Right
@@ -49,12 +50,39 @@
       &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O           &kp J           &kp Q
       &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E     &mt RALT I      &mt RGUI A
       &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &kp F           &kp COMMA       &kp PERIOD      &kp APOS
-                                        &none           &kp BSPC        &kp SPACE               &kp SPACE       &kp LC(BSPC)    &none
+                                        &to 1           &kp BSPC        &kp SPACE               &kp SPACE       &kp LC(BSPC)    &none
 
                         >;
 
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
+
+                default_layer {
+/* Default
+ * .----------------------------------.                       .----------------------------------.
+ * |   Q  |   W  |   E  |   R  |   T  |                       |   Y  |   U  |   I  |   O  |   P  |
+ * |------+------+------+------+------|                       |------+------+------+------+------|
+ * |   A  |   S  |   D  |   F  |   G  |                       |   H  |   J  |   K  |   L  |   ;  |
+ * |------+------+------+------+------|                       |------+------+------+------+------|
+ * |   Z  |   X  |   C  |   V  |   B  | .-------.   .-------. |   N  |   M  |   ,  |   .  |   /  |
+ * '----------------------------------'/       /     \       \'----------------------------------'
+ *                   |  GUI |  LWR |  / Space /       \ Space \  |TT(RS)| Tab  |
+ *                   |      |      | /       /         \       \ |      |      |
+ *                   '-------------''-------'           '-------''-------------'
+ *
+ *   Encoder Left: Up <-> Down
+ *   Encoder Right: Left <-> Right
+ */
+                        bindings = <
+      &kp Q             &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
+      &kp A             &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
+      &kp Z             &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp PERIOD      &kp APOS
+                                        &to 0        &kp BSPC        &kp SPACE               &kp RSHFT       &kp RCTRL       &RGUI
+
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                };
         };
 };
