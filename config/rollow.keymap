@@ -51,9 +51,9 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O           &kp J           &kp Q
-      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E     &mt RALT I      &mt RGUI A
-      &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &lt 4 F         &kp COMMA       &kp PERIOD      &kp APOS
+      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O                &kp J                  &kp Q
+      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E          &mt RALT I             &mt RGUI A
+      &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &lt 4 F         &ht_tp COLON COMMA   &ht_tp QMARK PERIOD    &ht_tp DQT APOS
                                         &none           &kp BSPC        &lt 2 SPACE             &lt 3 ENTER     &kp LC(BSPC)    &kp C_MUTE
 
                         >;
