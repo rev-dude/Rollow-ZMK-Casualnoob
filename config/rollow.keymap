@@ -107,10 +107,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp Q             &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-      &kp A             &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-      &kp Z             &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp PERIOD      &kp APOS
-                                        &to BASE        &kp BSPC        &kp SPACE               &kp RSHFT       &kp RCTRL       &kp RGUI
+      &kp ESC           &kp N7           &kp N8           &kp N9           &kp MINUS              &kp Y           &kp U           &kp I           &kp O           &kp P
+      &mt LGUI PEROID   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    &kp N0                 &kp H           &kp J           &kp K           &kp L           &kp SEMI
+      &kp COMMA         &kp N1           &kp N2           &kp N3           &kp APOS               &kp N           &kp M           &kp COMMA       &kp PERIOD      &kp APOS
+                                         &to BASE         &kp DEL          &trans                 &kp RSHFT       &kp RCTRL       &kp RGUI
 
                         >;
 
