@@ -12,7 +12,6 @@
 #define QWERTY 1
 #define SYMNUM 2
 #define NAV 3
-#define FN 4
 
 
 &mt {
@@ -107,10 +106,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           &kp N7           &kp N8           &kp N9           &kp MINUS              &kp Y           &kp U           &kp I           &kp O           &kp P
-      &mt LGUI PERIOD   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    &kp N0                 &kp H           &kp J           &kp K           &kp L           &kp SEMI
-      &kp COMMA         &kp N1           &kp N2           &kp N3           &kp APOS               &kp N           &kp M           &kp COMMA       &kp PERIOD      &kp APOS
-                                         &to BASE         &kp DEL          &trans                 &kp RSHFT       &kp RCTRL       &kp RGUI
+      &kp ESC           &kp N7           &kp N8           &kp N9           &kp MINUS              &kp LBKT        &kp LPAR        &kp RPAR        &kp RBKT        &kp BACKSLASH
+      &mt LGUI PERIOD   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    &kp N0                 &kp LS(N1)      &mt RSHFT MINUS &mt RCTRL AT    &mt RALT EQUAL  &mt RGUI SLASH
+      &kp COMMA         &kp N1           &kp N2           &kp N3           &kp APOS               &kp DOLLAR      &mt PRCNT HASH  &kp GRAVE       &kp AMPERSAND   &kp SEMICOLON
+                                         &to BASE         &kp DEL          &trans                 &kp SPACE       &kp DEL         &none
 
                         >;
 
@@ -135,38 +134,10 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O           &kp J           &kp Q
-      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E     &mt RALT I      &mt RGUI A
-      &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &kp F           &kp COMMA       &kp PERIOD      &kp APOS
-                                        &none           &kp BSPC        &kp SPACE               &kp SPACE       &kp LC(BSPC)    &kp C_MUTE
-
-                        >;
-
-                        sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT)) &inc_dec_kp C_VOL_DN C_VOL_UP>;
-                };
-
-
-                function_layer {
-/* Default
- * .----------------------------------.                       .----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |                       |   Y  |   U  |   I  |   O  |   P  |
- * |------+------+------+------+------|                       |------+------+------+------+------|
- * |   A  |   S  |   D  |   F  |   G  |                       |   H  |   J  |   K  |   L  |   ;  |
- * |------+------+------+------+------|                       |------+------+------+------+------|
- * |   Z  |   X  |   C  |   V  |   B  | .-------.   .-------. |   N  |   M  |   ,  |   .  |   /  |
- * '----------------------------------'/       /     \       \'----------------------------------'
- *                   |  GUI |  LWR |  / Space /       \ Space \  |TT(RS)| Tab  |
- *                   |      |      | /       /         \       \ |      |      |
- *                   '-------------''-------'           '-------''-------------'
- *
- *   Encoder Left: Up <-> Down
- *   Encoder Right: Left <-> Right
- */
-                        bindings = <
-      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O           &kp J           &kp Q
-      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E     &mt RALT I      &mt RGUI A
-      &kp X             &kp M           &kp L           &kp D           &kp B                   &kp Z           &kp F           &kp COMMA       &kp PERIOD      &kp APOS
-                                        &none           &kp BSPC        &kp SPACE               &kp SPACE       &kp LC(BSPC)    &kp C_MUTE
+      &kp LA(F4)        &kp F7          &kp F8          &kp F9          &kp F10                 &kp PG_UP       &kp HOME        &kp UP          &kp END         &kp LG(LS(S))
+      &mt LGUI CAPS     &mt LALT F4     &mt LCTRL F5    &mt LSHFT F6    &kp F11                 &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &mt LG(GRAVE)
+      &to QWERTY        &kp F1          &kp F2          &kp F3          &kp F12                 &none           &kp RSHFT       &kp RCTR        &kp RALT        &kp RWIN
+                                        &none           &kp DEL         &kp TAB                 &trans          &trans          &none
 
                         >;
 
