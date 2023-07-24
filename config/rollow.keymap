@@ -137,7 +137,7 @@
       &kp LA(F4)        &kp F7          &kp F8          &kp F9          &kp F10                 &kp PG_UP       &kp HOME        &kp UP          &kp END         &kp LG(LS(S))
       &mt LGUI CAPS     &mt LALT F4     &mt LCTRL F5    &mt LSHFT F6    &kp F11                 &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &mt LG(GRAVE)
       &to QWERTY        &kp F1          &kp F2          &kp F3          &kp F12                 &none           &kp RSHFT       &kp RCTRL       &kp RALT        &kp RWIN
-                                        &none           &kp DEL         &kp TAB                 &trans          &trans          &none
+                                        &to QWERTY      &kp DEL         &kp TAB                 &trans          &trans          &none
 
                         >;
 
