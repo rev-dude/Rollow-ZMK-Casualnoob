@@ -50,9 +50,9 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &kp K           &kp Y           &kp O              &kp J                &kp Q
+      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &mt LC(Y) K     &kp Y           &kp O              &kp J                &kp Q
       &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &kp W           &mt RSHFT U     &mt RCTRL E        &mt RALT I           &mt RGUI A
-      &kp A             &kp M           &kp L           &kp D           &kp B                   &kp Z           &kp F         &mt COLON COMMA    &mt QMARK PERIOD     &mt DQT APOS
+      &mt LC(Z) X       &mt LC(X) M     &mt LC(C) L     &mt LC(V) D     &mt LC(Y) B             &kp Z           &kp F           &mt COLON COMMA    &mt QMARK PERIOD     &mt DQT APOS
                                         &none           &kp BSPC        &lt 2 SPACE             &lt 3 ENTER     &kp LC(BSPC)    &kp C_MUTE
 
                         >;
@@ -107,8 +107,8 @@
  */
                         bindings = <
       &kp ESC           &kp N7           &kp N8           &kp N9           &kp MINUS              &kp LBKT        &kp LPAR        &kp RPAR        &kp RBKT        &kp BACKSLASH
-      &mt LGUI PERIOD   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    &kp N0                 &kp LS(N1)      &mt RSHFT MINUS &mt RCTRL AT    &mt RALT EQUAL  &mt RGUI SLASH
-      &kp COMMA         &kp N1           &kp N2           &kp N3           &kp APOS               &kp DOLLAR      &mt PRCNT HASH  &kp GRAVE       &kp AMPERSAND   &kp SEMICOLON
+      &mt LGUI PERIOD   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    &mt LS(N0) N0          &kp LS(N1)      &mt RSHFT MINUS &mt RCTRL AT    &mt RALT EQUAL  &mt RGUI SLASH
+      &kp COMMA         &mt EXCL N1      &mt AT N2        &mt HASH N3      &mt DQT APOS           &kp DOLLAR      &mt PRCNT HASH  &kp GRAVE       &kp AMPERSAND   &kp SEMICOLON
                                          &to BASE         &kp DEL          &trans                 &kp SPACE       &kp DEL         &none
 
                         >;
