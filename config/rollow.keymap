@@ -29,6 +29,17 @@
       compatible = "zmk,battery-nrf-vddh";
       label = "VBATT";
   };
+  behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            #binding-cells = <2>;
+            tapping_term_ms = <190>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
         keymap {
                 compatible = "zmk,keymap";
