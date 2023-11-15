@@ -12,7 +12,7 @@
 #define QWERTY 1
 #define SYMNUM 2
 #define NAV 3
-#detine SYSMEDIA 4
+#define SYSMEDIA 4
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
