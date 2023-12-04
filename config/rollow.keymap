@@ -176,8 +176,8 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &bootloader       &reset       &none            &none            &none                      &none             &kp C_VOL_UP     &kp C_MUTE       &reset            &bootloader
-      &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none                  &trans            &kp C_VOL_DN     &kp C_PP         &none            &none
+      &none             &none            &none            &reset           &bootloader            &none             &kp C_VOL_UP     &kp C_MUTE       &reset           &bootloader
+      &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR             &trans            &kp C_VOL_DN     &kp C_PP         &none            &none
       &none             &none            &none            &none            &none                  &none             &kp C_PREV       &kp C_NEXT       &none            &none
                                          &to BASE         &none            &none                  &none             &none            &none
 
