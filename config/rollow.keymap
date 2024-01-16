@@ -43,6 +43,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hrm: home_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MODS";
+            #binding-cells = <2>;
+            tapping_term_ms = <190>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
         keymap {
