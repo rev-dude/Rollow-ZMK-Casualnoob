@@ -43,6 +43,24 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hm: home_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MODS";
+            #binding-cells = <2>;
+            tapping_term_ms = <190>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        th: tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD";
+            #binding-cells = <2>;
+            tapping_term_ms = <190>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
         keymap {
@@ -65,14 +83,14 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &mt LC(Y) K     &kp Y           &kp O              &kp J                &kp Q
-      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &lt 4 W         &mt RSHFT U     &mt RCTRL E        &mt RALT I           &mt RGUI A
-      &mt LC(Z) X       &mt LC(X) M     &mt LC(C) L     &mt LC(V) D     &mt LC(Y) B             &kp Z           &kp F           &mt COLON COMMA    &mt QMARK PERIOD     AS(APOS)
+      &kp ESC           &kp C           &kp H           &kp P           &kp V                   &th LC(Y) K     &kp Y           &kp O              &kp J                &kp Q
+      &hm LGUI R        &hm LALT S      &hm LCTRL N     &hm LSHFT T     &kp G                   &lt 4 W         &hm RSHFT U     &hm RCTRL E        &hm RALT I           &mt RGUI A
+      &th LC(Z) X       &th LC(X) M     &th LC(C) L     &th LC(V) D     &th LC(Y) B             &kp Z           &kp F           &th COLON COMMA    &th QMARK PERIOD     AS(APOS)
                                         &none           &kp BSPC        &lt 2 SPACE             &lt 3 ENTER     &kp LC(BSPC)    &kp C_MUTE
 
                         >;
 
-                        sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB)) &inc_dec_kp C_VOL_DN C_VOL_UP>;
+                        sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB)) &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
 
@@ -121,9 +139,9 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &kp ESC           AS(N7)           AS(N8)           AS(N9)           AS(MINUS)              AS(LBKT)        &mt LT LPAR     &mt GT RPAR     AS(RBKT)        AS(BACKSLASH)
-      &mt LGUI PERIOD   &mt LALT N4      &mt LCTRL N5     &mt LSHIFT N6    AS(N0)                 &kp EXCL        &mt RSHFT MINUS &mt RCTRL AT    &mt RALT EQUAL  &mt RGUI SLASH
-      &kp COMMA         AS(N1)           AS(N2)           AS(N3)           AS(APOS)               &kp DOLLAR      &mt PRCNT HASH  AS(GRAVE)       &kp AMPERSAND   AS(SEMICOLON)
+      &kp ESC           AS(N7)           AS(N8)           AS(N9)           AS(MINUS)              AS(LBKT)        &th LT LPAR     &th GT RPAR     AS(RBKT)        AS(BACKSLASH)
+      &hm LGUI PERIOD   &hm LALT N4      &hm LCTRL N5     &hm LSHIFT N6    AS(N0)                 &kp EXCL        &hm RSHFT MINUS &hm RCTRL AT    &hm RALT EQUAL  &hm RGUI SLASH
+      &kp COMMA         AS(N1)           AS(N2)           AS(N3)           AS(APOS)               &kp DOLLAR      &th PRCNT HASH  AS(GRAVE)       &kp AMPERSAND   AS(SEMICOLON)
                                          &to BASE         &kp DEL          &trans                 &kp SPACE       &kp DEL         &none
 
                         >;
@@ -150,7 +168,7 @@
  */
                         bindings = <
       &kp LA(F4)        &kp F7          &kp F8          &kp F9          &kp F10                 &kp PG_UP       &kp HOME        &kp UP          &kp END         &kp LG(LS(S))
-      &mt LGUI CAPS     &mt LALT F4     &mt LCTRL F5    &mt LSHFT F6    &kp F11                 &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp LG(GRAVE)
+      &hm LGUI CAPS     &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &kp F11                 &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp LG(GRAVE)
       &to QWERTY        &kp F1          &kp F2          &kp F3          &kp F12                 &none           &kp RSHFT       &kp RCTRL       &kp RALT        &kp RWIN
                                         &to QWERTY      &kp DEL         &kp TAB                 &trans          &trans          &none
 
