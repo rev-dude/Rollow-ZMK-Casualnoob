@@ -43,7 +43,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hrm: home_row_mods {
+        hm: home_row_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS";
             #binding-cells = <2>;
@@ -75,7 +75,7 @@
  */
                         bindings = <
       &kp ESC           &kp C           &kp H           &kp P           &kp V                   &mt LC(Y) K     &kp Y           &kp O              &kp J                &kp Q
-      &mt LGUI R        &mt LALT S      &mt LCTRL N     &mt LSHFT T     &kp G                   &lt 4 W         &mt RSHFT U     &mt RCTRL E        &mt RALT I           &mt RGUI A
+      &hm LGUI R        &hm LALT S      &hm LCTRL N     &hm LSHFT T     &kp G                   &lt 4 W         &hm RSHFT U     &hm RCTRL E        &hm RALT I           &mt RGUI A
       &mt LC(Z) X       &mt LC(X) M     &mt LC(C) L     &mt LC(V) D     &mt LC(Y) B             &kp Z           &kp F           &mt COLON COMMA    &mt QMARK PERIOD     AS(APOS)
                                         &none           &kp BSPC        &lt 2 SPACE             &lt 3 ENTER     &kp LC(BSPC)    &kp C_MUTE
 
